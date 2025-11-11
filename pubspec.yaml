@@ -9,16 +9,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  # pacote - INTL usado para formatar datas e horas de acordo com país
   intl: 
   supabase_flutter: 2.10.3
+  flutter_lints: ^5.0.0
+  provider: 
+  # UUID - biblioteca usada para gerar Id únicos universais
+  uuid:
+  # http:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
-  provider: 
-  uuid:
-  # http:
-
+  
 flutter:
   uses-material-design: true

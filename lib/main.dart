@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'views/app.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-// importei o supabase e mudei o void main
+// 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
