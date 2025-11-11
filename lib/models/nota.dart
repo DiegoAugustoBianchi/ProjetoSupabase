@@ -6,7 +6,7 @@ class Nota {
 
   Nota(this.id, this.title, this.date);
 
-  factory Nota.fromJson(Map<String, dynamic> json) {
+  factory Nota.fromJson(Map<String, dynamic> json) { // Transforma dados do banco (JSON) em um objeto nota
     return Nota(
       json['id'] as String,
       json['title'] as String,
@@ -14,11 +14,11 @@ class Nota {
     );
   }
 
-  Map<String, dynamic> toJson() {
-    return {
-      "id": id,
-      "title": title,
-      "date": date.toIso8601String(),
-    };
-  }
+//   Map<String, dynamic> toJson() {
+//     return {
+//       "id": id,
+//       "title": title,
+//       "date": date.toIso8601String(),
+//     };
+//   }
 }

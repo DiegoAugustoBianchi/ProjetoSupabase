@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'views/app.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-// 
+// Conexão com o Supabase
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
