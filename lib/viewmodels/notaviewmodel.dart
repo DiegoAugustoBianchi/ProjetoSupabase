@@ -5,6 +5,7 @@ import '../models/nota.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class NotaViewModel extends ChangeNotifier {
+
   // realizando a comunicação com banco de dados da Supabase
   final SupabaseClient client = Supabase.instance.client;
   final String table = 'Notas';
@@ -20,7 +21,9 @@ class NotaViewModel extends ChangeNotifier {
     await client.from(table).insert({
       'id': nota.id,
       'title': nota.title,
-      'date': nota.date.toIso8601String(), // Converte data para formato ISO
+      'date': nota.date.toIso8601String(),
+      'status': "ativo" //Exemplo feito na apresentação segunda a Dúvida do Professor
+       // Converte data para formato ISO universal
     });
 
     _notas.add(nota);
